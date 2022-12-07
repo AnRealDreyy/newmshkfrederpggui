@@ -1,0 +1,197 @@
+local erghsergf = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local attack1 = Instance.new("TextButton")
+local attack1status = Instance.new("TextLabel")
+local attack2status = Instance.new("TextLabel")
+local attack2 = Instance.new("TextButton")
+local attack3 = Instance.new("TextButton")
+local attack3status = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+
+erghsergf.Name = "erghsergf"
+erghsergf.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+erghsergf.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = erghsergf
+Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame.Position = UDim2.new(0.270202041, 0, 0.246889204, 0)
+Frame.Size = UDim2.new(0, 880, 0, 546)
+
+attack1.Name = "attack1"
+attack1.Parent = Frame
+attack1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+attack1.Position = UDim2.new(0.0329545438, 0, 0.53171885, 0)
+attack1.Size = UDim2.new(0, 190, 0, 232)
+attack1.Font = Enum.Font.SourceSansBold
+attack1.Text = "АТТАКА 1"
+attack1.TextColor3 = Color3.fromRGB(0, 0, 0)
+attack1.TextSize = 56.000
+attack1.TextWrapped = true
+
+attack1status.Name = "attack1status"
+attack1status.Parent = Frame
+attack1status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+attack1status.Position = UDim2.new(0.0329545438, 0, 0.404269606, 0)
+attack1status.Size = UDim2.new(0, 190, 0, 69)
+attack1status.Font = Enum.Font.SourceSansBold
+attack1status.Text = "ВЫКЛЮЧЕНО"
+attack1status.TextColor3 = Color3.fromRGB(0, 0, 0)
+attack1status.TextScaled = true
+attack1status.TextSize = 14.000
+attack1status.TextWrapped = true
+
+attack2status.Name = "attack2status"
+attack2status.Parent = Frame
+attack2status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+attack2status.Position = UDim2.new(0.392045438, 0, 0.404269606, 0)
+attack2status.Size = UDim2.new(0, 190, 0, 69)
+attack2status.Font = Enum.Font.SourceSansBold
+attack2status.Text = "ВЫКЛЮЧЕНО"
+attack2status.TextColor3 = Color3.fromRGB(0, 0, 0)
+attack2status.TextScaled = true
+attack2status.TextSize = 14.000
+attack2status.TextWrapped = true
+
+attack2.Name = "attack2"
+attack2.Parent = Frame
+attack2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+attack2.Position = UDim2.new(0.392045438, 0, 0.53171885, 0)
+attack2.Size = UDim2.new(0, 190, 0, 232)
+attack2.Font = Enum.Font.SourceSansBold
+attack2.Text = "АТТАКА 2"
+attack2.TextColor3 = Color3.fromRGB(0, 0, 0)
+attack2.TextSize = 56.000
+attack2.TextWrapped = true
+
+attack3.Name = "attack3"
+attack3.Parent = Frame
+attack3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+attack3.Position = UDim2.new(0.747727275, 0, 0.53171885, 0)
+attack3.Size = UDim2.new(0, 190, 0, 232)
+attack3.Font = Enum.Font.SourceSansBold
+attack3.Text = "АТТАКА 3"
+attack3.TextColor3 = Color3.fromRGB(0, 0, 0)
+attack3.TextSize = 56.000
+attack3.TextWrapped = true
+
+attack3status.Name = "attack3status"
+attack3status.Parent = Frame
+attack3status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+attack3status.Position = UDim2.new(0.747727275, 0, 0.404269606, 0)
+attack3status.Size = UDim2.new(0, 190, 0, 69)
+attack3status.Font = Enum.Font.SourceSansBold
+attack3status.Text = "ВЫКЛЮЧЕНО"
+attack3status.TextColor3 = Color3.fromRGB(0, 0, 0)
+attack3status.TextScaled = true
+attack3status.TextSize = 14.000
+attack3status.TextWrapped = true
+
+title.Name = "title"
+title.Parent = Frame
+title.BackgroundColor3 = Color3.fromRGB(255, 0, 230)
+title.Size = UDim2.new(0, 880, 0, 132)
+title.Font = Enum.Font.Creepster
+title.Text = "SUPER MEGA ROBLOX HACK MISHKA FREDDI RPG"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+local function WGCZV_fake_script()
+	local script = Instance.new('LocalScript', attack1)
+
+	local args = {
+		[1] = game:GetService("Players").LocalPlayer.PlayerGui.Attacks.Frame.Attack1.Info
+	}
+	
+	local actived = false
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		if actived == false then
+			actived = true
+			script.Parent.Parent.attack1status.Text = "РАБОТАЕТ КАК ШВЕЙЦАРСКИЕ ЧАСЫ"
+		else
+			actived = false
+			script.Parent.Parent.attack1status.Text = "ВЫКЛЮЧЕНО"
+		end
+	end)
+	
+	while task.wait() do
+		if actived == true then
+			game:GetService("ReplicatedStorage").UseMove:FireServer(unpack(args))
+		else
+			return
+		end
+	end
+end
+coroutine.wrap(WGCZV_fake_script)()
+local function AFYVN_fake_script()
+	local script = Instance.new('LocalScript', attack2)
+
+	local args = {
+		[1] = game:GetService("Players").LocalPlayer.PlayerGui.Attacks.Frame.Attack2.Info
+	}
+	
+	local actived = false
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		if actived == false then
+			actived = true
+			script.Parent.Parent.attack2status.Text = "РАБОТАЕТ КАК ШВЕЙЦАРСКИЕ ЧАСЫ"
+		else
+			actived = false
+			script.Parent.Parent.attack2status.Text = "ВЫКЛЮЧЕНО"
+		end
+	end)
+	
+	while task.wait() do
+		if actived == true then
+			game:GetService("ReplicatedStorage").UseMove:FireServer(unpack(args))
+		else
+			return
+		end
+	end
+end
+coroutine.wrap(AFYVN_fake_script)()
+local function XYODY_fake_script()
+	local script = Instance.new('LocalScript', attack3)
+
+	local args = {
+		[1] = game:GetService("Players").LocalPlayer.PlayerGui.Attacks.Frame.Attack3.Info
+	}
+	
+	local actived = false
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		if actived == false then
+			actived = true
+			script.Parent.Parent.attack3status.Text = "РАБОТАЕТ КАК ШВЕЙЦАРСКИЕ ЧАСЫ"
+		else
+			actived = false
+			script.Parent.Parent.attack3status.Text = "ВЫКЛЮЧЕНО"
+		end
+	end)
+	
+	while task.wait() do
+		if actived == true then
+			game:GetService("ReplicatedStorage").UseMove:FireServer(unpack(args))
+		else
+			return
+		end
+	end
+end
+coroutine.wrap(XYODY_fake_script)()
+local function HOKO_fake_script()
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(HOKO_fake_script)()
